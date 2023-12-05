@@ -1,0 +1,9 @@
+Vamos a realizar los siguientes Ejercicios:
+
+1. Leer un número de 1 a 12 y decir cuantos días tiene ese mes.
+
+2. Sabiendo que la división entera es //, Leer un número cualquiera y decir cuantas cifras tiene ese número
+
+3. Leer un numero y calcular la suma de todos los pares desde 1 hasta ese número.
+
+Nota: El operador % calcula el resto de la división
