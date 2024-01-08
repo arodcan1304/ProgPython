@@ -1,0 +1,8 @@
+Cargar una oración por teclado. Mostrar luego cuantas palabras se ingresaron. Tener en cuenta que un espacio en blanco es igual a
+" ", en cambio una cadena vacía es ""
+
+
+Ingresar una oración que pueden tener letras tanto en mayúsculas como minúsculas. Contar la cantidad de vocales. Crear un segundo string con toda la oración en minúsculas para que sea más fácil disponer la condición que verifica que es una vocal.
+
+
+Solicitar el ingreso de una clave por teclado y almacenarla en una cadena de caracteres. Controlar que el string ingresado tenga entre 10 y 20 caracteres para que sea válido, en caso contrario mostrar un mensaje de error.
