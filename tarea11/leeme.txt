@@ -1,0 +1,10 @@
+Vamos a realizar la simulación de un banco donde podemos hacer lo siguiente:
+
+1. Crear cuenta
+
+2. Consultar saldo
+
+3. Realizar Ingreso
+
+4. Salir
+
