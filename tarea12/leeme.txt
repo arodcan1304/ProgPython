@@ -1,0 +1,30 @@
+Crear una lista de enteros por asignación. Definir una función que reciba una lista de enteros y un segundo parámetro de tipo entero. Dentro de la función mostrar cada elemento de la lista multiplicado por el valor entero enviado.
+
+lista=[3, 7, 8, 10, 2]
+multiplicar(lista,3)
+Desarrollar una función que reciba una lista de string y nos retorne el que tiene más caracteres. Si hay más de uno con dicha cantidad de caracteres debe retornar el que tiene un valor de componente más baja.
+En el bloque principal iniciamos por asignación la lista de string:
+palabras=["enero", "febrero", "marzo", "abril", "mayo", "junio"]
+print("Palabra con mas caracteres:",mascaracteres(palabras))
+
+Definir una lista de enteros por asignación en el bloque principal. Llamar a una función que reciba la lista y nos retorne el producto de todos sus elementos. Mostrar dicho producto en el bloque principal de nuestro programa.
+
+En una empresa se almacenaron los sueldos de 10 personas.
+Desarrollar las siguientes funciones y llamarlas desde el bloque principal:
+1) Carga de los sueldos en una lista.
+2) Impresión de todos los sueldos.
+3) Cuántos tienen un sueldo superior a $4000.
+4) Retornar el promedio de los sueldos.
+5) Mostrar todos los sueldos que están por debajo del promedio.
+
+Desarrollar una aplicación que permita ingresar por teclado los nombres de 5 artículos y sus precios.
+Definir las siguientes funciones:
+1) Cargar los nombres de articulos y sus precios.
+2) Imprimir los nombres y precios.
+3) Imprimir el nombre de artículo con un precio mayor
+4) Ingresar por teclado un importe y luego mostrar todos los artículos con un precio menor igual al valor ingresado.
+
+Confeccionar un programa que permita:
+1) Cargar una lista de 10 elementos enteros.
+2) Generar dos listas a partir de la primera. En una guardar los valores positivos y en otra los negativos.
+3) Imprimir las dos listas generadas.
