@@ -1,0 +1,40 @@
+Confeccionar un programa con las siguientes funciones:
+1)Cargar una lista de 5 enteros.
+2)Retornar el mayor y menor valor de la lista mediante una tupla.
+Desempaquetar la tupla en el bloque principal y mostrar el mayor y menor.
+
+
+Confeccionar un programa con las siguientes funciones:
+1)Cargar el nombre de un empleado y su sueldo. Retornar una tupla con dichos valores
+2)Una función que reciba como parámetro dos tuplas con los nombres y sueldos de empleados y muestre el nombre del empleado con sueldo mayor.
+En el bloque principal del programa llamar dos veces a la función de carga y seguidamente llamar a la función que muestra el nombre de empleado con sueldo mayor.
+# bloque principal
+
+empleado1=cargar_empleado()
+empleado2=cargar_empleado()
+mayor_sueldo(empleado1,empleado2)
+Almacenar en una lista 5 empleados, cada elemento de la lista es una sub lista con el nombre del empleado junto a sus últimos tres sueldos (estos tres valores en una tupla)
+El programa debe tener las siguientes funciones:
+1)Carga de los nombres de empleados y sus últimos tres sueldos.
+2)Imprimir el monto total cobrado por cada empleado.
+3)Imprimir los nombres de empleados que tuvieron un ingreso trimestral mayor a 10000 en los últimos tres meses.
+Tener en cuenta que la estructura de datos si se carga por asignación debería ser similar a:
+empleados = [["juan",(2000,3000,4233)] , ["ana",(3444,1000,5333)] ,  etc.   ]
+
+
+Se tiene que cargar los votos obtenidos por tres candidatos a una elección.
+En una lista cargar en la primer componente el nombre del candidato y en la segunda componente cargar una lista con componentes de tipo tupla con el nombre de la provincia y la cantidad de votos obtenidos en dicha provincia.
+Se deben cargar los datos por teclado, pero si se cargaran por asignación tendría una estructura similar a esta:
+
+candidatos=[ ("juan",[("cordoba",100),("buenos aires",200)]) , ("ana", [("cordoba",55)]) , ("luis", [("buenos aires",20)]) ]
+1) Función para cargar todos los candidatos, sus nombres y las provincias con los votos obtenidos.
+2) Imprimir el nombre del candidato y la cantidad total de votos obtenidos en todas las provincias.
+Definir una función que cargue una lista con palabras y la retorne.
+Luego otra función tiene que mostrar todas las palabras de la lista que tienen más de 5 caracteres.
+
+
+Almacenar los nombres de 5 productos y sus precios. Utilizar una lista y cada elemento una tupla con el nombre y el precio.
+Desarrollar las funciones:
+1) Cargar por teclado.
+2) Listar los productos y precios.
+3) Imprimir los productos con precios comprendidos entre 10 y 15.
