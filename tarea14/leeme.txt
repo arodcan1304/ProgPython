@@ -1,0 +1,25 @@
+Vamos almacenar los siguientes datos de estudiantes:
+
+- Código
+
+- Nombre y Apellidos
+
+- Asignatura
+
+- Nota
+
+Y vamos a crear el siguiente menú:
+
+1. Agregar un nuevo estudiante
+
+2. Eliminar un nuevo estudiante (por código)
+
+3. Modificar un nuevo estudiante
+
+4. Mostrar todos los estudiantes
+
+5. Mostrar estudiantes por asignatura
+
+6. Mostrar aprobados por asignatura
+
+7. Salir del menú
