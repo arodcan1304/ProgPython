@@ -1,0 +1,7 @@
+Plantear una clase Club y otra clase Socio.
+La clase Socio debe tener los siguientes atributos: nombre y la antigüedad en el club (en años).
+En el método __init__ de la clase Socio pedir la carga por teclado del nombre y su antigüedad.
+La clase Club debe tener como atributos una lista de la clase Socio.
+
+Definir el constructor, agregar socio, imprimir socios, imprimir un socio
+Definir una responsabilidad para imprimir el nombre del socio con mayor antigüedad en el club.
