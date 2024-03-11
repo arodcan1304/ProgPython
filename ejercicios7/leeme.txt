@@ -1,0 +1,2 @@
+Disponer varios objetos de la clase Checkbutton con nombres de navegadores web. En el título de la ventana mostrar todos los nombres de navegadores seleccionados.
+Solicitar el ingreso del nombre de una persona y seleccionar de un control Listbox un país. Al presionar un botón mostrar en la barra de la ventana el nombre ingresado y el país seleccionado.
