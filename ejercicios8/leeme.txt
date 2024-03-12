@@ -1,0 +1,2 @@
+Solicitar el ingreso del nombre de una persona y seleccionar de un control Combobox un país. Al presionar un botón mostrar en la barra de la ventana el nombre ingresado y el país seleccionado.
+
