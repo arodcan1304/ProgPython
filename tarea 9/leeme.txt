@@ -1,0 +1,1 @@
+Mediante dos controles de tipo Entry permitir el ingreso de dos números. Crear un menú que contenga una opción que cambie el tamaño de la ventana con los valores ingresados por teclado. Finalmente disponer otra opción que finalice el programa
