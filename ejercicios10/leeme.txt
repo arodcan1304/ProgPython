@@ -1,0 +1,5 @@
+Al hacer clic en insertar, agregamos el nombre y la nota en el listbox de la forma :   Nombre - Nota
+
+Si seleccionamos un nombre y nota del listbox y pulsamos Eliminar, eliminará esa nota del listbox.
+
+Las opciones del menú solamente tienen salir, que cerrará la aplicación
