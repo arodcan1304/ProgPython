@@ -7,7 +7,6 @@ class Aplicacion:
     def __init__(self):
         self.ventana1 = tk.Tk()
         self.contador = 0
-        self.alumnos = []  # List to store student data
         menubar1 = tk.Menu(self.ventana1)
         self.ventana1.config(menu=menubar1)
         self.agregar_menu()
@@ -29,6 +28,8 @@ class Aplicacion:
 
         ttk.Button(self.ventana1, text="Insertar", command=self.insertar).grid(column=0, row=3)
         ttk.Button(self.ventana1, text="Eliminar", command=self.eliminar).grid(column=1, row=3)
+        ttk.Button(self.ventana1, text="Generar Informe Aprobados", command=self.generar_informe_aprobados).grid(column=0, row=5)
+        ttk.Button(self.ventana1, text="Generar Informe Suspensos", command=self.generar_informe_suspensos).grid(column=1, row=5)
 
         self.listbox1 = tk.Listbox(self.ventana1)
         self.listbox1.grid(column=0, row=4, columnspan=2, sticky="we")
@@ -40,37 +41,35 @@ class Aplicacion:
         self.ventana1.config(menu=menubar1)
         opciones1 = tk.Menu(menubar1, tearoff=0)
         opciones1.add_command(label="Salir", command=self.salir)
-        opciones1.add_command(label="Generar Informe Aprobados", command=self.generar_informe_aprobados)
-        opciones1.add_command(label="Generar Informe Suspensos", command=self.generar_informe_suspendidos)
         menubar1.add_cascade(label="Opciones", menu=opciones1)
 
     def insertar(self):
-        nombre = self.dato1.get()
-        nota = int(self.dato2.get())
-        codigo = self.dato3.get()
-        dato = f"{nombre}-{nota}-{codigo}"
-        self.alumnos.append((nombre, nota, codigo))
+        dato=self.dato1.get()+"-"+self.dato2.get()+"-"+self.dato3.get()
         self.listbox1.insert(self.contador, dato)
-        self.contador += 1
+        self.contador+= 1
 
     def eliminar(self):
         if len(self.listbox1.curselection()) != 0:
-            item = self.listbox1.curselection()[0]
-            del self.alumnos[item]
+            item=self.listbox1.curselection()[0]
             self.listbox1.delete(item)
-            self.contador -= 1
+            self.contador-=1
 
     def generar_informe_aprobados(self):
-        with open("aprobados.txt", "w") as file:
-            for alumno in self.alumnos:
-                if alumno[1] >= 5:
-                    file.write(f"{alumno[0]} - Aprobado\n")
+        self.generar_informe("aprobados.txt", 5)
 
-    def generar_informe_suspendidos(self):
-        with open("suspendidos.txt", "w") as file:
-            for alumno in self.alumnos:
-                if alumno[1] < 5:
-                    file.write(f"{alumno[0]} - Suspensos\n")
+    def generar_informe_suspensos(self):
+        self.generar_informe("suspensos.txt", 5, False)
+
+    def generar_informe(self, filename, cutoff_grade, approved=True):
+        with open(filename, "w") as file:
+            file.write("Nombre\tNota\n")
+            for i in range(self.listbox1.size()):
+                entry = self.listbox1.get(i)
+                nombre, nota, _ = entry.split("-")
+                if (approved and float(nota) >= cutoff_grade) or (not approved and float(nota) < cutoff_grade):
+                    file.write(f"{nombre}\t{nota}\n")
+
+        mb.showinfo("Informe Generado", f"Informe de {'Aprobados' if approved else 'Suspensos'} generado en {filename}. Mira en tu carpeta de descargas")
 
     def salir(self):
         respuesta = mb.askyesno("Cuidado", "¿Quiere salir del programa?")
