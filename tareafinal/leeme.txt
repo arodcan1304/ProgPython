@@ -1,0 +1,9 @@
+Vamos a realizar una interfaz, utilizando todos los conceptos dados durante el curso, que lleve el control de las notas de un alumno.
+
+- Alta de alumnos: Codigo, Nombre, Apellidos y Nota
+
+- Consulta de alumnos aprobados y consulta de alumnos suspensos
+
+- Informes en ficheros. Realizar las consultas anteriores en ficheros de texto
+
+- Salir de la aplicación.
